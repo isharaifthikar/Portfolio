@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Professional QA Engineer portfolio showcasing quality assurance expertise, testing skills, and UI/UX design services">
+    <title>Ishara Ifthikar</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Space Background -->
+    <div class="space-background"></div>
+    <canvas id="stars-canvas"></canvas>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="#home">Ishara Ifthikar</a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-container">
+                <div class="hero-image">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-frame">
+                            <img src="C:/Users/Ishara/.gemini/antigravity/brain/84b2c712-d3e4-448b-90ca-6a03e82acc4a/qa_hero_profile_1766821366920.png"
+                                alt="QA Engineer Professional Photo">
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="name">Ishara Ifthikar</span>
+                    </h1>
+                    <!--<p class="hero-subtitle">QA Engineer</p>-->
+                    <p class="hero-subtitle">
+                        <span class="text-wrapper">
+                            <span class="text qa">QA Engineer</span>
+                            <span class="text ui">UI/UX Designer</span>
+                        </span>
+                    </p>
+
+                    <p class="hero-description">
+                    I am an undergraduate student passionate about learning software quality assurance and user interface design.
+                Currently, I am building my skills in manual testing, test case preparation, and defect reporting.
+                Alongside QA, I have a strong interest in UI and UX design and enjoy creating simple, user-friendly designs.
+                I am motivated to learn, improve my skills, and grow toward a career in QA and UI engineering.
+            </p>
+
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Contact Me
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <p class="section-description">Technical expertise and professional competencies</p>
+
+            <div class="skills-container">
+                
+                <!-- Soft Skills -->
+                <div class="skills-category">
+                    <h3 class="category-title">Soft Skills</h3>
+                    <div class="soft-skills-grid">
+                        <div class="soft-skill-card">
+                            <div class="soft-skill-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="soft-skill-name">Self-Motivated</div>
+                        </div>
+
+                        <div class="soft-skill-card">
+                            <div class="soft-skill-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="soft-skill-name">Leadership and Communication</div>
+                        </div>
+
+                        <div class="soft-skill-card">
+                            <div class="soft-skill-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="soft-skill-name">Teamwork</div>
+                        </div>
+
+                        <div class="soft-skill-card">
+                            <div class="soft-skill-icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <div class="soft-skill-name">Ability to Adapt Dynamic Environment</div>
+                        </div>
+
+                        <div class="soft-skill-card">
+                            <div class="soft-skill-icon">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="soft-skill-name">Project Management</div>
+                        </div>
+
+                        <div class="soft-skill-card">
+                            <div class="soft-skill-icon">
+                                <i class="fas fa-people-arrows"></i>
+                            </div>
+                            <div class="soft-skill-name">Collaboration</div>
+                        </div>
+
+                        <div class="soft-skill-card">
+                            <div class="soft-skill-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="soft-skill-name">Problem Solving</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Skills -->
+                <div class="skills-category">
+                    <h3 class="category-title">Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-progress="75">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="fas fa-vial"></i>
+                                </div>
+                                <span class="skill-name">Manual Testing</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 0%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card" data-progress="80">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="fas fa-clipboard-check"></i>
+                                </div>
+                                <span class="skill-name">Test Case Design</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 0%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card" data-progress="65">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="fas fa-bug"></i>
+                                </div>
+                                <span class="skill-name">Bug Tracking (Jira)</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 0%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card" data-progress="90">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <span class="skill-name">HTML/CSS/JavaScript</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 0%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card" data-progress="50">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <span class="skill-name">React</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 0%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card" data-progress="90">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <span class="skill-name">PHP & MySQL</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 0%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card" data-progress="95">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="fas fa-pencil-ruler"></i>
+                                </div>
+                                <span class="skill-name">Figma / Adobe XD</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 0%"></div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title1">What I can do</h2>
+            <!--<p class="section-description1">Professional QA and development services I offer</p>-->
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Manual Software Testing</h3>
+                    <p>
+                        Test applications, write test cases, track bugs, and ensure software quality and functionality.
+                        Comprehensive testing strategies to identify issues and maintain the highest quality standards.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>UI/UX Design & Development</h3>
+                    <p>
+                        Design and create user interfaces using Figma, Canva, Adobe XD, and Photoshop with a focus
+                        on usability and intuitive experience. Crafting beautiful, functional designs.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development Support</h3>
+                    <p>
+                        Assist in frontend and backend development using HTML, CSS, JavaScript, React, PHP, and MySQL.
+                        Debug issues and ensure smooth functionality across all platforms.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-description">Recent QA and development projects</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300/3A7D44/ffffff?text=E-Commerce+Testing"
+                            alt="E-Commerce Testing Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce QA Testing</h3>
+                        <p>Comprehensive testing of e-commerce platform including payment integration, cart
+                            functionality,
+                            and user authentication with detailed test case documentation.</p>
+                        <div class="project-buttons">
+                            <a href="#" class="btn-small btn-primary">View Details</a>
+                            <a href="#" class="btn-small btn-outline">Test Cases</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300/a2888c/ffffff?text=Mobile+App+Testing"
+                            alt="Mobile App Testing">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Mobile App QA</h3>
+                        <p>End-to-end testing of mobile application across iOS and Android platforms with focus on
+                            usability, performance, and cross-device compatibility.</p>
+                        <div class="project-buttons">
+                            <a href="#" class="btn-small btn-primary">View Details</a>
+                            <a href="#" class="btn-small btn-outline">Reports</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300/3A7D44/ffffff?text=API+Testing"
+                            alt="API Testing Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>API Testing Suite</h3>
+                        <p>Automated API testing using Postman with comprehensive test collections, environment
+                            configurations, and detailed documentation for REST APIs.</p>
+                        <div class="project-buttons">
+                            <a href="#" class="btn-small btn-primary">View Details</a>
+                            <a href="#" class="btn-small btn-outline">Collection</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300/a2888c/ffffff?text=UI+Design+Project"
+                            alt="UI Design Portfolio">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fab fa-figma"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>UI/UX Design Portfolio</h3>
+                        <p>Modern, responsive user interface designs created with Figma and Adobe XD featuring
+                            intuitive user experiences and accessibility-first approach.</p>
+                        <div class="project-buttons">
+                            <a href="#" class="btn-small btn-primary">View Designs</a>
+                            <a href="#" class="btn-small btn-outline">Figma File</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title1">Contact Me</h2>
+            <p class="section-description1">Let's discuss your quality assurance needs</p>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                    <div class="success-message" id="successMessage">
+                        <i class="fas fa-check-circle"></i> Message sent successfully!
+                    </div>
+                </form>
+                <div class="contact-info">
+                    <div class="social-links">
+                        <h3>Connect with me</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i> <!-- Changed from fa-twitter to fa-instagram -->
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy;2025 Ishara Ifthikar. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
