@@ -272,6 +272,14 @@ revealOnScroll();
 // ===========================
 // Contact Form Validation
 // ===========================
+
+// Initialize EmailJS
+(function () {
+    emailjs.init({
+        publicKey: "eloX9wZ3qEIeVOyty",
+    });
+})();
+
 const contactForm = document.getElementById('contactForm');
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
@@ -344,26 +352,54 @@ contactForm.addEventListener('submit', (e) => {
     const isEmailValid = validateEmail();
     const isMessageValid = validateMessage();
 
-    // If all fields are valid, show success message
+    // If all fields are valid, send email
     if (isNameValid && isEmailValid && isMessageValid) {
-        // Show success message
-        successMessage.classList.add('show');
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.innerHTML;
 
-        // Reset form
-        contactForm.reset();
+        // Show sending state
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        submitBtn.disabled = true;
 
-        // Clear error messages
-        nameError.textContent = '';
-        emailError.textContent = '';
-        messageError.textContent = '';
+        // Send email using EmailJS
+        emailjs.sendForm('service_dlpbuv7', 'template_mqxrjn6', contactForm)
+            .then(() => {
+                // Show success message
+                successMessage.classList.add('show');
+                successMessage.innerHTML = '<i class="fas fa-check-circle"></i> Message sent successfully!';
 
-        // Hide success message after 5 seconds
-        setTimeout(() => {
-            successMessage.classList.remove('show');
-        }, 5000);
+                // Reset form
+                contactForm.reset();
 
-        // Log form data (in production, send to server)
-        console.log('Form submitted successfully!');
+                // Clear error messages
+                nameError.textContent = '';
+                emailError.textContent = '';
+                messageError.textContent = '';
+
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    successMessage.classList.remove('show');
+                }, 5000);
+
+                console.log('Form submitted successfully!');
+            }, (error) => {
+                console.error('EmailJS FAILED...', error);
+                // Show error message if it fails
+                successMessage.classList.add('show');
+                successMessage.innerHTML = '<i class="fas fa-exclamation-circle"></i> Failed to send message. Please try again.';
+                successMessage.style.backgroundColor = 'rgba(231, 76, 60, 0.1)';
+                successMessage.style.borderColor = '#e74c3c';
+                successMessage.style.color = '#e74c3c';
+
+                setTimeout(() => {
+                    successMessage.classList.remove('show');
+                }, 5000);
+            })
+            .finally(() => {
+                // Restore button state
+                submitBtn.innerHTML = originalBtnText;
+                submitBtn.disabled = false;
+            });
     }
 });
 
